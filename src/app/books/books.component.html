@@ -1,0 +1,15 @@
+<app-topbar></app-topbar>
+<div class="claseMadre">
+    <h1> Books </h1>
+    @for (book of books; track $index) {
+        <mat-card (click)="redirectTo(book.name)">
+            <img mat-card-xl-image src = {{book.srcImg}}>
+            <mat-card-header>
+                <mat-card-title-group>
+                    <mat-card-title>{{book.name}}</mat-card-title>
+                    <mat-card-subtitle>{{book.synopsis}}</mat-card-subtitle>
+                </mat-card-title-group>
+            </mat-card-header>
+        </mat-card>
+    }
+</div>

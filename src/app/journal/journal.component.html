@@ -1,0 +1,14 @@
+<app-topbar></app-topbar>
+<div class="claseMadre">
+    <h1> Blog </h1>
+    @for (blog of blogs; track $index) {
+        <mat-card (click)="redirectTo(blog.name)">
+            <mat-card-header>
+                <mat-card-title-group>
+                    <mat-card-title>{{blog.name}}</mat-card-title>
+                    <mat-card-subtitle>{{blog.subtitle}}</mat-card-subtitle>
+                </mat-card-title-group>
+                </mat-card-header>
+        </mat-card>
+    }
+</div>

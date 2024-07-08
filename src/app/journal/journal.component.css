@@ -1,0 +1,11 @@
+.claseMadre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+}
+mat-card {
+    margin-bottom: 1%;
+    border-radius: 25px;
+    overflow: hidden;
+}

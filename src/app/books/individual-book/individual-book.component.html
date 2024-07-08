@@ -1,0 +1,12 @@
+<div class="divPrincipal"> 
+    <app-topbar class="topBar"></app-topbar>
+        <mat-toolbar class="barraEbook">
+        <button class="botonAtras" (click)="prevPage()">Anterior</button>          
+        <button class="botonSiguiente" (click)="nextPage()">Siguiente</button>
+    </mat-toolbar>
+    <div id="viewer" class="vista"
+        (mousedown)="onMouseDown($event)" 
+        (mouseup)="onMouseUp($event)"
+        (touchstart)="onTouchStart($event)"
+        (touchend)="onTouchEnd($event)"></div>
+</div>

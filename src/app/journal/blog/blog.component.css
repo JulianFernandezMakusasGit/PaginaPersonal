@@ -1,0 +1,8 @@
+.divPrincipal {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: auto;
+    width: 70%;
+    font-size: x-large;
+}
