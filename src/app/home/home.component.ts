@@ -12,10 +12,64 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  pesoInicial = 84;
+  pesoObjetivo = 73;
+  pesoActual = 80.9;
+  grasaCorporalInicial = 23;
+  grasaCorporalObjetivo = 15;
+  grasaCorporalActual = 21.9;
+  grasaVisceralInicial = 13;
+  grasaVisceralObjetivo = 8;
+  grasaVisceralActual = 12;
+
+  calcularPorcentajeAvance(pesoInicial: number, pesoActual: number, pesoObjetivo: number): any {
+    if (pesoInicial === pesoObjetivo) {
+      return 100;
+    }
+    let porcentajeAvance: number;
+    porcentajeAvance = ((pesoInicial - pesoActual) / (pesoInicial - pesoObjetivo)) * 100;  
+    return porcentajeAvance.toFixed(2);
+  }
+
   projects = [
-    {name: "Project 1: aaaaaaaaaaaaaaaaaaaaa", description: "Small description", progress: 20, srcImg: "../../assets/Chibi.png"},
-    {name: "Project 2:", description: "Small description", progress: 1, srcImg: "../../assets/Chibi.png"},
-    {name: "Project 3:", description: "Small description", progress: 1, srcImg: "../../assets/Chibi.png"},
-    {name: "Project 4:", description: "Small description", progress: 3, srcImg: "../../assets/Chibi.png"},
+    { name: "Project 1: Fanfics", 
+      description: "Here we are going to have the progress about all my fanfics so you can always see what I'm doing.", 
+      subProjects: [
+        {name: "Writing: Teach me to love again: Chapter 1", progress: 10},
+        {name: "Editing: Leave: Chapter 1", progress: 0},
+        {name: "Editing: A kitten for the 141", progress: 0},
+        {name: "Rewriting: Power imbalances in love", progress: 0},
+        {name: "Editing: Promise to mama Mactavish", progress: 0},
+        {name: "Editing: I'll be there for you", progress: 0}
+      ]
+    },
+    { name: "Project 2: Sea of darkness", 
+      description: "Secret project to be revealed at the end of the year.", 
+      subProjects: [
+        {name: "Shards of chaos", progress: 0}
+      ]
+    },
+    { name: "Project 3: True Polymorph", 
+      description: "Secret project to be revealed at the end of the year.", 
+      subProjects: [
+        {name: "P", progress: this.calcularPorcentajeAvance(this.pesoInicial, this.pesoActual, this.pesoObjetivo)},
+        {name: "GC", progress: this.calcularPorcentajeAvance(this.grasaCorporalInicial, this.grasaCorporalActual, this.grasaCorporalObjetivo)},
+        {name: "GA", progress: this.calcularPorcentajeAvance(this.grasaVisceralInicial, this.grasaVisceralActual, this.grasaVisceralObjetivo)}
+      ]
+    },
+    { name: "Project 4: Comprehend reality", 
+      description: "Secret project to be revealed at the end of the year.", 
+      subProjects: [
+        {name: "F", progress: 0},
+        {name: "C", progress: 0}
+      ]
+    },
+    { name: "Project 5: Expanding horizons", 
+      description: "Secret project to be revealed at the end of the year.", 
+      subProjects: [
+        {name: "V", progress: 0}
+      ]
+    }
+    
   ]
 }

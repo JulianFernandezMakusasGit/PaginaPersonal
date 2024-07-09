@@ -1,43 +1,57 @@
 .madre {
-    background-color: beige;
+    background-color: #2E3440;
 }
 
 .markdown ::ng-deep h1{
-    width: 90%;
+    width: 80%;
     margin: auto;
     align-content: center;
     font-size: 7vh;
     text-align: left;
-    line-height: 8vh;
-    background-color: beige;
+    line-height: 9vh;
+    background-color: #2E3440;
+    color: #BF616A;
 }
 
 .markdown ::ng-deep h2 {
-    width: 90%;
+    width: 80%;
     margin: auto;
     align-content: center;
     font-size: 6vh;
     text-align: left;
-    line-height: 7vh;
-    background-color: beige;
+    line-height: 8vh;
+    background-color: #2E3440;
+    color: #FFFF69;
 }
 
 .markdown ::ng-deep h3{
-    width: 90%;
+    width: 80%;
     margin: auto;
     align-content: center;
     font-size: 5vh;
     text-align: left;
-    line-height: 6vh;
-    background-color: beige;
+    line-height: 7vh;
+    background-color: #2E3440;
+    color: #00FF00;
 }
 
 .markdown ::ng-deep p{
-    width: 90%;
+    width: 80%;
     margin: auto;
     align-content: center;
     font-size: 3vh;
     text-align: left;
-    line-height: 4vh;
-    background-color: beige;
+    line-height: 5vh;
+    background-color: #2E3440;
+    color: white;
+}
+
+.markdown-content strong,
+.markdown-content b {
+  color: #FFCC67; /* Cambia esto al color que prefieras */
+}
+
+.markdown-content em,
+.markdown-content i {
+  color: #A1C181; /* Cambia esto al color que prefieras */
 }

@@ -15,9 +15,9 @@ export class JournalComponent implements OnInit {
     constructor(private router: Router) {}
     blogs = [
       { 
-        name: "WhyMyOwnPage", 
+        name: "Why my own page?", 
         subtitle: "Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum ", 
-        srcHtml: "../../assets/Blogs/WhyMyOwnPage.md", 
+        mdFile: "WhyMyOwnPage", 
         srcImg:"../../assets/Portadas/Blog/Why my own page.jpg"
       }
     ]

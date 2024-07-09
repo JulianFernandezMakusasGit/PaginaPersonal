@@ -2,7 +2,7 @@
 <div class="claseMadre">
     <h1> Blog </h1>
     @for (blog of blogs; track $index) {
-        <mat-card (click)="redirectTo(blog.name)">
+        <mat-card (click)="redirectTo(blog.mdFile)">
             <mat-card-header>
                 <mat-card-title-group>
                     <mat-card-title>{{blog.name}}</mat-card-title>

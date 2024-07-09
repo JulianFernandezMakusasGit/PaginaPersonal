@@ -4,9 +4,9 @@ import ePub, { Book } from 'epubjs';
 import { TopbarComponent } from '../../topbar/topbar.component';
 import { ActivatedRoute } from '@angular/router';
 import { MatToolbar } from '@angular/material/toolbar';
-import {MatInputModule} from '@angular/material/input';
-import {MatSelectModule} from '@angular/material/select';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 
 
@@ -17,13 +17,14 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './individual-book.component.html',
   styleUrl: './individual-book.component.css'
 })
-export class IndividualBookComponent implements OnInit{
+export class IndividualBookComponent implements OnInit {
   private book: Book | undefined;
   private rendition: any;
   private startX: number = 0;
   private endX: number = 0;
   private isBrowser!: boolean;
-  
+  private hideButtonsTimeout: any;
+
   constructor(private route: ActivatedRoute, @Inject(PLATFORM_ID) private platformId: object) {
     this.isBrowser = isPlatformBrowser(platformId);
   }
@@ -57,46 +58,18 @@ export class IndividualBookComponent implements OnInit{
 
   prevPage(): void {
     if (this.rendition) {
-      this.rendition.prev().then(() => {
-        console.log('Went to previous page');
-      }).catch((error: any) => {
-        console.error('Error going to previous page:', error);
-      });
+      this.rendition.prev().then(() => {}).catch((error: any) => {console.error('Error going to previous page:', error);});
     } else {
       console.error('Rendition is not initialized');
     }
   }
 
   nextPage(): void {
-    if (this.rendition) {
-      this.rendition.next().then(() => {
-        console.log('Went to next page');
-      }).catch((error: any) => {
-        console.error('Error going to next page:', error);
+    if (this.rendition) {this.rendition.next().then(() => {}).catch((error: any) => {console.error('Error going to next page:', error);
       });
     } else {
       console.error('Rendition is not initialized');
     }
-  }
-
-  @HostListener('window:keydown', ['$event'])
-  handleKeyDown(event: KeyboardEvent) {
-    if (event.key === 'ArrowRight') {
-      this.nextPage();
-    } else if (event.key === 'ArrowLeft') {
-      this.prevPage();
-    }
-  }
-
-  @HostListener('mousedown', ['$event'])
-  onMouseDown(event: MouseEvent) {
-    this.startX = event.clientX;
-  }
-
-  @HostListener('mouseup', ['$event'])
-  onMouseUp(event: MouseEvent) {
-    this.endX = event.clientX;
-    this.handleSwipe();
   }
 
   @HostListener('touchstart', ['$event'])
