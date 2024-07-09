@@ -16,28 +16,27 @@
 
 .barraEbook {
     min-height: 32px;
-    max-height: 2vh;
+    max-height: 7vh;
     background-color: transparent;
     cursor: pointer;
+    text-align: center;
 }
 
 button {
-    position: absolute;
     border: none;
     cursor: pointer;
     background-color: beige;
     width: 30vw;
     height: 5vh;
     border-radius: 30px;
-    text-align: center;
 }
 
 #prev-btn {
-    left: 10vw;
-    bottom: 5vh;
+    text-align: center;
+    margin: auto;
 }
 
 #next-btn {
-    right: 10vw;
-    bottom: 5vh;
+    text-align: center;
+    margin: auto;
 }

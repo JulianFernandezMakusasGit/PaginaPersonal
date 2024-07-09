@@ -3,8 +3,10 @@
     <div id="viewer" class="vista"
         (touchstart)="onTouchStart($event)"
         (touchend)="onTouchEnd($event)"></div>
-    <mat-toolbar class="barraEbook">
-        <button id="prev-btn" (click)="prevPage()">previus page</button>          
-        <button id="next-btn" (click)="nextPage()">next page</button>
-    </mat-toolbar>
+    <div class="barraDeNavegacion">
+        <mat-toolbar class="barraEbook">
+            <button id="prev-btn" (click)="prevPage()">previus page</button>          
+            <button id="next-btn" (click)="nextPage()">next page</button>
+        </mat-toolbar>
+    </div>
 </div>
