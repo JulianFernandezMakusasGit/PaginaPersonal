@@ -17,7 +17,7 @@ export class BooksComponent {
   books = [
     { 
       name: "Leave", 
-      synopsis: "Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum ", 
+      synopsis: "After ", 
       srcEpub: "../../assets/Epubs/Leave.epub", 
       srcImg:"../../assets/Portadas/Epub/Leave.jpg"
     },
