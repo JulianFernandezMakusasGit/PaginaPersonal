@@ -18,7 +18,7 @@ export class BooksComponent {
   books = [
     { 
       name: "Leave", 
-      synopsis: "After bad experiences with love in the past, Soap decides to trust in love again, after crossing paths with Ghost. But an old grief and a night of alcohol are going to put an end to the happiness in his life. Will Soap forgive Ghost? Read and find out.", 
+      synopsis: "After bad experiences with love in the past, Soap decides to trust in love again, after crossing paths with Ghost. But an old grief and a night of alcohol are going to put an end to the happiness in his life. Will Soap forgive Ghost? Read and find out. Inspired by @IsaAfterDark.", 
       srcEpub: "Leave", 
       srcImg:"../../assets/Portadas/Epub/Book.png",
       tags: ["SoapGhost", "Angst", "Cheating", "Confort"]
@@ -32,14 +32,14 @@ export class BooksComponent {
     },
     {
       name: "A kitten for the 141",
-      synopsis: "Soap and Ghost bring a kitten they found on the training grounds and Price finds out.", 
+      synopsis: "Soap and Ghost bring a kitten they found on the training grounds and Price finds out. Inspired by @sofkefox art.", 
       srcEpub: "AKittenForThe141", 
       srcImg:"../../assets/Portadas/Epub/Book.png",
       tags: ["SoapGhost", "Confort"]
     },
     {
       name: "Promise to mama Mactavish", 
-      synopsis: "Soap calls Mama Mactavish for her birthday and his mother asks for a very specific gift.", 
+      synopsis: "Soap calls Mama Mactavish for her birthday and his mother asks for a very specific gift. Inspired by @IsaAfterDark.", 
       srcEpub: "PromiseToMamaMactavish", 
       srcImg:"../../assets/Portadas/Epub/Book.png",
       tags: ["SoapGhost", "Confort"]
