@@ -46,12 +46,23 @@
     color: white;
 }
 
+.markdown ::ng-deep li{
+    width: 80%;
+    margin: auto;
+    align-content: center;
+    font-size: 3vh;
+    text-align: left;
+    line-height: 5vh;
+    background-color: #2E3440;
+    color: white;
+}
+
 .markdown-content strong,
 .markdown-content b {
-  color: #FFCC67; /* Cambia esto al color que prefieras */
+  color: #FFCC67;
 }
 
 .markdown-content em,
 .markdown-content i {
-  color: #A1C181; /* Cambia esto al color que prefieras */
+  color: #A1C181;
 }

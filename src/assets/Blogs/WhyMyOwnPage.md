@@ -11,5 +11,7 @@ And also, this web page is not done, there is a lot of things that I would like 
 - I want to implement a chapter selector in the fanfics so you can select the chapter where you left it.
 - I want to implement a light mode for the general page and a dark mode for the fanfic reader because I know that some people have trouble reading with dark / light mode and I want to let you choose which one you prefer.
 - I want to implement a notification system so you can subscribe to a fanfic and receive an email every time I update said fic.
+
+
 But this things are going to be implemented in the future, since this months were quite hectic.
 I think there is nothing more to say, anything that you want to say to me you can do it in the reply section of the tweet, hope you have a nice week.
