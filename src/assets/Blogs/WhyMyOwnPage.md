@@ -1,3 +1,4 @@
+# Why my own page?
 Hello fellow reader, today I'm happy to tell you that now I have my own web page.
 ## The blue mark check
 Since the blue mark check was implemented with Twitter premium, the experience in the app for those who don't pay gets worse and worse, not only for the algorithm and exposure, but also for some missing features that are really useful for writing.
