@@ -16,7 +16,7 @@ export class JournalComponent implements OnInit {
     blogs = [
       { 
         name: "Why my own page?", 
-        subtitle: "Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum ", 
+        subtitle: "Hey there, a little explanation on why I created this web page.", 
         mdFile: "WhyMyOwnPage", 
         srcImg:"../../assets/Portadas/Blog/Why my own page.jpg"
       }

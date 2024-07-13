@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { TopbarComponent } from '../topbar/topbar.component';
 import { MatCardModule } from '@angular/material/card';
 import { Router } from '@angular/router';
+import {MatChipsModule} from '@angular/material/chips';
 
 @Component({
   selector: 'app-books',
   standalone: true,
-  imports: [TopbarComponent, MatCardModule],
+  imports: [TopbarComponent, MatCardModule, MatChipsModule],
   templateUrl: './books.component.html',
   styleUrl: './books.component.css'
 })
@@ -17,32 +18,36 @@ export class BooksComponent {
   books = [
     { 
       name: "Leave", 
-      synopsis: "After ", 
-      srcEpub: "../../assets/Epubs/Leave.epub", 
-      srcImg:"../../assets/Portadas/Epub/Leave.jpg"
+      synopsis: "After bad experiences with love in the past, Soap decides to trust in love again, after crossing paths with Ghost. But an old grief and a night of alcohol are going to put an end to the happiness in his life. Will Soap forgive Ghost? Read and find out.", 
+      srcEpub: "Leave", 
+      srcImg:"../../assets/Portadas/Epub/Book.png",
+      tags: ["SoapGhost", "Angst", "Cheating", "Confort"]
     },
     { 
-      name: "Nombre de prueba",
-      synopsis: "Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum ", 
-      srcEpub: "a description",
-      srcImg:"../../assets/Chibi.png"
+      name: "I'll be there for you",
+      synopsis: "Memories of the past torment Ghost, remembering the moments he had with Soap before he was killed by Makarov.", 
+      srcEpub: "IllBeThereForYou",
+      srcImg:"../../assets/Portadas/Epub/Book.png",
+      tags: ["SoapGhost", "Angst", "MCD"]
     },
     {
-      name: "Nombre de prueba",
-      synopsis: "Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum ", 
-      srcEpub: "a description", 
-      srcImg:"../../assets/Chibi.png"
+      name: "A kitten for the 141",
+      synopsis: "Soap and Ghost bring a kitten they found on the training grounds and Price finds out.", 
+      srcEpub: "AKittenForThe141", 
+      srcImg:"../../assets/Portadas/Epub/Book.png",
+      tags: ["SoapGhost", "Confort"]
     },
     {
-      name: "Nombre de prueba", 
-      synopsis: "Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum ", 
-      srcEpub: "a description", 
-      srcImg:"../../assets/Chibi.png"
+      name: "Promise to mama Mactavish", 
+      synopsis: "Soap calls Mama Mactavish for her birthday and his mother asks for a very specific gift.", 
+      srcEpub: "PromiseToMamaMactavish", 
+      srcImg:"../../assets/Portadas/Epub/Book.png",
+      tags: ["SoapGhost", "Confort"]
     }
   ]
 
-  redirectTo(name:String) {
-    var route = "books/" + name;
+  redirectTo(srcEpub:String) {
+    var route = "books/" + srcEpub;
     console.log(route);
     this.router.navigate([route]);
   }

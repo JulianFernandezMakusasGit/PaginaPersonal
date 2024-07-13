@@ -3,6 +3,7 @@
     <h1> Blog </h1>
     @for (blog of blogs; track $index) {
         <mat-card (click)="redirectTo(blog.mdFile)">
+            <img mat-card-xl-image src = {{blog.srcImg}}>
             <mat-card-header>
                 <mat-card-title-group>
                     <mat-card-title>{{blog.name}}</mat-card-title>
