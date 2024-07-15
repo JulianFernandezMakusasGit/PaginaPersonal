@@ -17,6 +17,13 @@ export class BooksComponent {
 
   books = [
     { 
+      name: "Teach me to love again", 
+      synopsis: "Ghost begins to realize that he is developing feelings for his younger sergeant.", 
+      srcEpub: "TeachMeToLoveAgain", 
+      srcImg:"../../assets/Portadas/Epub/Book.png",
+      tags: ["SoapGhost"]
+    },
+    { 
       name: "Leave", 
       synopsis: "After bad experiences with love in the past, Soap decides to trust in love again, after crossing paths with Ghost. But an old grief and a night of alcohol are going to put an end to the happiness in his life. Will Soap forgive Ghost? Read and find out. Inspired by @IsaAfterDark.", 
       srcEpub: "Leave", 
