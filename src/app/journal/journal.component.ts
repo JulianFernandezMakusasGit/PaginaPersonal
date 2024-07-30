@@ -19,6 +19,12 @@ export class JournalComponent implements OnInit {
         subtitle: "Hey there, a little explanation on why I created this web page.", 
         mdFile: "WhyMyOwnPage", 
         srcImg:"../../assets/Portadas/Blog/Why my own page.jpg"
+      },
+      { 
+        name: "My two cents - Why I hate Windows 11?", 
+        subtitle: "Recently I bought a new laptop for my mother and made me realize some concerning thing about future OS and the few options we have when is about privacy.", 
+        mdFile: "MyTwoCents-WhyIHateWindows11", 
+        srcImg:"../../assets/Portadas/Blog/Why my own page.jpg"
       }
     ]
 

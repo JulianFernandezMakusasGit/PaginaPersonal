@@ -30,3 +30,7 @@ mat-card-title {
 mat-card-subtitle {
     font-size: large;
 }
+
+.imagen {
+    max-width: max-content;
+}
