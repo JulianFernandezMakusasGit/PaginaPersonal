@@ -31,25 +31,11 @@ export class BooksComponent {
       tags: ["SoapGhost", "Angst", "Cheating", "Confort"]
     },
     { 
-      name: "I'll be there for you",
-      synopsis: "Memories of the past torment Ghost, remembering the moments he had with Soap before he was killed by Makarov.", 
-      srcEpub: "IllBeThereForYou",
+      name: "Threadfics",
+      synopsis: "Some short fics that I wrote on Twitter", 
+      srcEpub: "Threadfics",
       srcImg:"../../assets/Portadas/Epub/Book.png",
-      tags: ["SoapGhost", "Angst", "MCD"]
-    },
-    {
-      name: "A kitten for the 141",
-      synopsis: "Soap and Ghost bring a kitten they found on the training grounds and Price finds out. Inspired by @sofkefox art.", 
-      srcEpub: "AKittenForThe141", 
-      srcImg:"../../assets/Portadas/Epub/Book.png",
-      tags: ["SoapGhost", "Confort"]
-    },
-    {
-      name: "Promise to mama Mactavish", 
-      synopsis: "Soap calls Mama Mactavish for her birthday and his mother asks for a very specific gift. Inspired by @IsaAfterDark.", 
-      srcEpub: "PromiseToMamaMactavish", 
-      srcImg:"../../assets/Portadas/Epub/Book.png",
-      tags: ["SoapGhost", "Confort"]
+      tags: ["SoapGhost", "Angst", "MCD","Confort"]
     }
   ]
 
