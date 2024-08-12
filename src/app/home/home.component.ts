@@ -35,7 +35,7 @@ export class HomeComponent {
     { name: "Project 1: Fanfics", 
       description: "Here we are going to have the progress about all my fanfics so you can always see what I'm doing.", 
       subProjects: [
-        {name: "Writing: Teach me to love again: Chapter 4", progress: 15},
+        {name: "Writing: Teach me to love again: Chapter 5", progress: 27},
         {name: "Editing: Leave: Chapter 1", progress: 0},
         {name: "Editing: A kitten for the 141", progress: 0},
         {name: "Rewriting: Power imbalances in love", progress: 0},
